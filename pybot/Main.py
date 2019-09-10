@@ -13,6 +13,9 @@ PERMITTED_USERS = data['permitted_users']
 
 c = discord.Client()
 BOT_PREFIX = ['.', '!', '?']
+TOKEN=''
+with open('TOKEN.txt) as f:
+          TOKEN=f.read()
 TOKEN = 'NTYxNzA3MjQ4NzM3NTgzMTI1.XKCSHg.kCvuJ0wyJoETfeIADN_kFeuJ2zY'
 
 client = Bot(command_prefix=BOT_PREFIX)
