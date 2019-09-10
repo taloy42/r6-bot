@@ -1,4 +1,7 @@
 # r6-bot
+
+//works on python 3.7.3 32bit
+
 a discord bot for me and my friends for when we play a game
 
 this bot has several functions, every function must start with the prefix stated in the json file
