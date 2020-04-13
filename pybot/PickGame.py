@@ -6,9 +6,9 @@ def intersection(lst1, lst2):
 
 # data
 import json
-json_file = open('PlayerGameData.json', 'r')
-data = json.load(json_file)
-
+data={}
+with open('PyBotConfig.json', 'r') as json_file:
+	data=json.load(json_file)
 avihay = data['avihay']
 eliran = data['eliran']
 evyatar = data['evyatar']

@@ -1,6 +1,6 @@
-import random
+﻿import random
 import nicetables
-names = ['אלרין','אביתר','אביחי','בן','לוי',]
+names = ['אלירן','אביתר','אביחי','בן','לוי',]
 
 def teamselect(names):
     names = list(names)

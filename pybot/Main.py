@@ -1,3 +1,4 @@
+﻿# -*- coding: utf-8 -*-
 from discord.ext.commands import Bot
 import discord
 import random
@@ -6,16 +7,17 @@ from GameInfo import gameinfo
 import time
 
 import json
-json_file = open('PlayerGameData.json', 'r')
-data = json.load(json_file)
+data={}
+with open('PyBotConfig.json', 'r') as json_file:
+	data = json.load(json_file)
+
 PERMITTED_USERS = data['permitted_users']
 
 
 c = discord.Client()
-BOT_PREFIX = ['.', '!', '?']
-TOKEN=''
-with open('TOKEN.txt') as f:
-          TOKEN=f.read()
+BOT_PREFIX = data['prefix']
+TOKEN=data['token']
+
 
 client = Bot(command_prefix=BOT_PREFIX)
 
